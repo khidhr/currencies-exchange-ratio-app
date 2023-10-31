@@ -14,7 +14,7 @@ currencies = ["MAD","USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "INR
 base_currency = st.selectbox("Selectionnez le devise de base: ", currencies)
 target_currency = st.selectbox("Selectionnez le devise cible: ", currencies)
 
-days = st.slider("Select Number of Days", min_value=1, max_value=30, value=7)
+days = st.slider("Selectionnez le nombre de jour:", min_value=1, max_value=30, value=7)
 
 def get_exchange_rates(base_currency, target_currency, days):
     ticker = f"{base_currency}{target_currency}=X"
